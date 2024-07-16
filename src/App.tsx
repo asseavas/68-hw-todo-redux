@@ -1,11 +1,8 @@
+import Layout from './components/Layout/Layout';
 import './App.css';
 
 const App = () => {
-  return (
-    <>
-      <h1>Hello, world!</h1>
-    </>
-  );
+  return <Layout>Hello, world!</Layout>;
 };
 
 export default App;
