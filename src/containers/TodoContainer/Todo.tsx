@@ -4,6 +4,7 @@ import { AppDispatch, RootState } from '../../app/store';
 import { fetchTodos, deleteTodo, updateTodoStatus } from './todoSlice';
 import TodoItems from '../../components/Todo/TodoItems';
 import Spinner from '../../components/Spinner/Spinner';
+import NewTodoForm from '../../components/NewTodoForm/NewTodoForm';
 
 const Todo = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -29,6 +30,7 @@ const Todo = () => {
 
   return (
     <div>
+      <NewTodoForm />
       {isLoading ? (
         <Spinner />
       ) : (
